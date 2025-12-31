@@ -53,7 +53,8 @@ def main():
         screen.fill("black") # set black background 
 
         updatable.update(dt)
-
+        
+        # if player and asteroid collide
         for asteroid in asteroids:
             if player.collides_with(asteroid):
                 log_event("player_hit")
